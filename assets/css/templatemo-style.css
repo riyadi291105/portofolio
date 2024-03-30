@@ -23,6 +23,7 @@ body {
 }
 
 
+
 /* Basic */
 
 body {
@@ -809,4 +810,82 @@ section.contact-me {
     .isotope-toolbar {
         margin-bottom: 20px;
     }
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+.container-serti {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+    height: 100%;
+    max-width: 900px; /* Mengatur lebar maksimum container */
+  }
+  
+  h1 {
+    text-align: center;
+    margin-top: 0;
+  }
+  
+  .certificate-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 800px;
+  }
+  
+  .certificate {
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+  }
+  
+  .certificate img {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Media query untuk perangkat seluler */
+  @media (max-width: 600px) {
+    .certificate-grid {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+  /* Media query untuk mode desktop */
+  @media (min-width: 601px) {
+    .certificate-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      padding: 20px;
+      margin: 0 auto; /* Menengahkan container secara horizontal pada mode desktop */
+      
+    }
+    .overlay {
+        margin-left: 10%; /* Margin kiri hanya akan berfungsi di mode desktop */
+    }
+  }
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Warna latar belakang dengan opasitas */
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay img {
+    max-width: 80%;
+    max-height: 80%;
 }

@@ -12,6 +12,7 @@
       href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <title>Portofolio Riyadi</title>
 <!--
@@ -31,7 +32,7 @@ https://templatemo.com/tm-531-reflux
   <body>
     <div id="page-wraper">
       <!-- Sidebar Menu -->
-      <div class="responsive-nav">
+      <div class="responsive-nav" style="overflow-y: auto; max-height: 500px;">
         <i class="fa fa-bars" id="menu-toggle"></i>
         <div id="menu" class="menu">
           <i class="fa fa-times" id="menu-close"></i>
@@ -51,6 +52,7 @@ https://templatemo.com/tm-531-reflux
                 <li><a href="#section1">Tentang Saya</a></li>
                 <li><a href="#section2">Keahlian Saya</a></li>
                 <li><a href="#section3">LSP</a></li>
+                <li><a href="#section5">Sertifikat Webinar</a></li>
               </ul>
             </nav>
 <div class="social-network">
@@ -70,9 +72,11 @@ https://templatemo.com/tm-531-reflux
         </div>
       </div>
 
+      
+
       <section class="section about-me" data-section="section1">
         <div class="container">
-          <div class="section-heading">
+          <div class="section-heading" data-aos="fade-left">
             <h2>Tentang Saya</h2>
             <div class="line-dec"></div>
             <span
@@ -82,11 +86,11 @@ https://templatemo.com/tm-531-reflux
           <div class="left-image-post">
             <div class="row">
               <div class="col-md-6">
-                <div class="left-image">
+                <div class="left-image" data-aos="fade-up">
                   <img src="assets/images/teliti.jpg" alt="" />
                 </div>
               </div>
-              <div class="col-md-6">
+              <div class="col-md-6" data-aos="fade-left">
                 <div class="right-text">
                   <h4>Karakter Saya</h4>
                   <p> Saya adalah orang yang teliti, cermat, dan berorientasi pada hasil. Saya juga memiliki kemampuan komunikasi dan interpersonal yang baik.
@@ -103,7 +107,7 @@ https://templatemo.com/tm-531-reflux
               <div class="col-md-6">
                 <div class="left-text">
 
-                  <div class="white-button">
+                  <div class="white-button" data-aos="zoom-in">
                     <a href="#">Baca Selengkapnya</a>
                   </div>
                 </div>
@@ -119,9 +123,9 @@ https://templatemo.com/tm-531-reflux
       </section>
 
       <section class="section my-services" data-section="section2">
-        <div class="container">
+        <div class="container" data-aos="zoom-in">
           <div class="section-heading">
-            <h2>Keahlian Saya</h2>
+            <h2 data-aos="fade-up">Keahlian Saya</h2>
             <div class="line-dec"></div>
             <span
               >•Merakit PC </br>
@@ -130,49 +134,49 @@ https://templatemo.com/tm-531-reflux
 •Memperbaiki printer</br>
 •Paham HTML dan CSS</span>
        </div>
-          <div class="row">
+       <div class="row">
             <div class="col-md-6">
               <div class="service-item">
-                <div class="first-service-icon service-icon"></div>
-                <h4>Merakit PC</h4>
-                <p>
+                <div class="first-service-icon service-icon" data-aos="zoom-in"></div>
+                <h4 data-aos="fade-left">Merakit PC</h4>
+                <p data-aos="fade-right">
                   Saya memiliki keahlian dalam merakit komputer pribadi, mulai dari memilih komponen hingga memasangnya.
                 </p>
               </div>
             </div>
             <div class="col-md-6">
               <div class="service-item">
-                <div class="second-service-icon service-icon"></div>
-                <h4>Menginstal Windows</h4>
-                <p>
+                <div class="second-service-icon service-icon" data-aos="zoom-in"></div>
+                <h4 data-aos="fade-right">Menginstal Windows</h4>
+                <p data-aos="fade-left">
                   Saya dapat menginstal sistem operasi Windows pada komputer pribadi dalam waktu kurang dari 1 Jam.
                 </p>
               </div>
             </div>
             <div class="col-md-6">
               <div class="service-item">
-                <div class="third-service-icon service-icon"></div>
-                <h4>Memperbaiki CPU</h4>
-                <p>
+                <div class="third-service-icon service-icon" data-aos="zoom-in"></div>
+                <h4 data-aos="fade-left">Memperbaiki CPU</h4>
+                <p data-aos="fade-right">
                   Saya dapat mengatasi masalah pada CPU komputer pribadi, seperti overheating, blue screen of death, dan masalah perangkat keras lainnya.
                 </p>
               </div>
             </div>
             <div class="col-md-6">
               <div class="service-item">
-                <div class="third-service-icon service-icon"></div>
-                <h4>Masalah Pada Printer</h4>
-                <p>
+                <div class="third-service-icon service-icon" data-aos="zoom-in"></div>
+                <h4 data-aos="fade-right">Masalah Pada Printer</h4>
+                <p data-aos="fade-left">
                   Saya dapat mengatasi masalah pada printer, seperti kertas macet, tinta habis, dan masalah perangkat lunak lainnya.
                 </p>
               </div>
                      </div>
-          <div class="row">
+          
             <div class="col-md-6">
               <div class="service-item">
-                <div class="first-service-icon service-icon"></div>
-                <h4>HTML & CSS</h4>
-                <p>
+                <div class="first-service-icon service-icon" data-aos="zoom-in"></div>
+                <h4 data-aos="fade-left">HTML & CSS</h4>
+                <p data-aos="fade-right">
                   Saya memiliki pemahaman yang baik tentang bahasa markup HTML dan CSS, sehingga saya dapat membuat halaman web yang menarik dan responsif.
                 </p>
               </div>
@@ -184,18 +188,43 @@ https://templatemo.com/tm-531-reflux
       <section class="section my-work" data-section="section3">
         <div class="container">
           <div class="section-heading">
-            <h2>KOMPETEN DI LSP</h2>
+            <h2 data-aos="fade-left">KOMPETEN DI LSP</h2>
             <div class="line-dec"></div>
-            <h3>tugas dan tanggung jawab</h3> </br>
-            <p>Crimping Kabel: Memasang konektor RJ45 dengan benar untuk transfer data yang efisien dan stabil dalam jaringan.</br></br>
+            <h3 data-aos="fade-right">tugas dan tanggung jawab</h3> </br>
+            <p data-aos="fade-left">Crimping Kabel: Memasang konektor RJ45 dengan benar untuk transfer data yang efisien dan stabil dalam jaringan.</br></br>
 
-Membuat Topologi (Cisco): Memilih, mengkonfigurasi, dan menghubungkan perangkat jaringan sesuai desain topologi, serta memastikan koneksi dan fungsi jaringan sesuai spesifikasi.</br> </br>
-
-Konfigurasi MikroTik: Menyesuaikan pengaturan jaringan, mengelola IP dan routing, konfigurasi firewall, keamanan, dan jaringan nirkabel, serta memastikan kinerja dan keamanan jaringan sesuai standar yang ditetapkan.</p> </br> </br> </br>
-
-<h1> SERTIFIKAT SEDANG DIPROSES DISEKOLAH</h1>
+ <p data-aos="fade-right">Membuat Topologi (Cisco): Memilih, mengkonfigurasi, dan menghubungkan perangkat jaringan sesuai desain topologi, serta memastikan koneksi dan fungsi jaringan sesuai spesifikasi.</br> </br>
+ </p>
+<p data-aos="fade-left">Konfigurasi MikroTik: Menyesuaikan pengaturan jaringan, mengelola IP dan routing, konfigurasi firewall, keamanan, dan jaringan nirkabel, serta memastikan kinerja dan keamanan jaringan sesuai standar yang ditetapkan.</p> </br> </br> </br>
+</p>
+<h1 data-aos="fade-right"> SERTIFIKAT LSP SEDANG DIPROSES DISEKOLAH</h1>
               
           </div>
+          
+          <section class="section about-me" data-section="section5">
+            <div class="container-serti">
+              <div class="container-serti">
+                <h1>SERTIFIKAT WEBINAR</h1>
+                <div class="certificate-grid">
+                    <div class="certificate" data-aos="zoom-in" onclick="openModal('serti1.jpg')">
+                        <img src="Serti/serti1.jpg" alt="Sertifikat 1">
+                    </div>
+                    <div class="certificate" data-aos="zoom-in" onclick="openModal('serti2.jpg')">
+                        <img src="Serti/serti2.jpg" alt="Sertifikat 2">
+                    </div>
+                    <div class="certificate" data-aos="zoom-in" onclick="openModal('serti5.jpg')">
+                        <img src="Serti/serti5.jpg" alt="Sertifikat 3">
+                    </div>
+                    <div class="certificate" data-aos="zoom-in" onclick="openModal('serti6.jpg')">
+                        <img src="Serti/serti6.jpg" alt="Sertifikat 4">
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Overlay untuk tampilan gambar diperbesar -->
+            <div class="overlay" onclick="closeModal()">
+                <img id="overlay-img" src="" alt="Sertifikat">
+            </div>
 <!--           <div class="row">
   <div class="isotope-wrapper">
     <form class="isotope-toolbar">
@@ -413,6 +442,23 @@ Konfigurasi MikroTik: Menyesuaikan pengaturan jaringan, mengelola IP dan routing
       $(window).scroll(function() {
         checkSection();
       });
+
+      function openModal(imageName) {
+    var overlay = document.querySelector('.overlay');
+    var overlayImg = document.getElementById('overlay-img');
+    overlayImg.src = 'Serti/' + imageName;
+    overlay.style.display = 'flex'; // Menampilkan overlay
+}
+
+// Fungsi untuk menutup overlay
+function closeModal() {
+    var overlay = document.querySelector('.overlay');
+    overlay.style.display = 'none'; // Menyembunyikan overlay
+}
     </script>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
   </body>
 </html>
