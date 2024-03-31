@@ -13,7 +13,6 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
     <title>Portofolio Riyadi</title>
 <!--
 Reflux Template
@@ -108,8 +107,9 @@ https://templatemo.com/tm-531-reflux
                 <div class="left-text">
 
                   <div class="white-button" data-aos="zoom-in">
-                    <a href="#">Baca Selengkapnya</a>
-                  </div>
+                    <a href="Serti/cv.pdf" download>Unduh CV</a>
+                </div>
+                
                 </div>
               </div>
               <div class="col-md-6">
@@ -202,22 +202,58 @@ https://templatemo.com/tm-531-reflux
           </div>
           
           <section class="section about-me" data-section="section5">
-            <div class="container-serti">
               <div class="container-serti">
-                <h1>SERTIFIKAT WEBINAR</h1>
+                <h1>E-SERTIFIKAT</h1>
                 <div class="certificate-grid">
-                    <div class="certificate" data-aos="zoom-in" onclick="openModal('serti1.jpg')">
-                        <img src="Serti/serti1.jpg" alt="Sertifikat 1">
-                    </div>
-                    <div class="certificate" data-aos="zoom-in" onclick="openModal('serti2.jpg')">
-                        <img src="Serti/serti2.jpg" alt="Sertifikat 2">
-                    </div>
-                    <div class="certificate" data-aos="zoom-in" onclick="openModal('serti5.jpg')">
-                        <img src="Serti/serti5.jpg" alt="Sertifikat 3">
-                    </div>
-                    <div class="certificate" data-aos="zoom-in" onclick="openModal('serti6.jpg')">
-                        <img src="Serti/serti6.jpg" alt="Sertifikat 4">
-                    </div>
+                  <div class="cisco">
+                    <div class="certificate" data-aos="zoom-in" onclick="openModal('Serti/cisco.png')">
+                      <img src="Serti/cisco.png" alt="Serti/cisco.png">
+                  </div>
+                  <h5 class="title" >CISCO DASAR</h5>
+                  </div>
+                  
+                  <div class="cisco">
+                    <div class="certificate" data-aos="zoom-in" onclick="openModal('Serti/mikrotik.png')">
+                      <img src="Serti/mikrotik.png" alt="Sertifikat 1">
+                     </div>
+                  <h5 class="title" >MIKROTIK</h5>
+                  </div>
+
+                  <div class="cisco">
+                    <div class="certificate" data-aos="zoom-in" onclick="openModal('Serti/jaringankomputerdasar.png')">
+                      <img src="Serti/jaringankomputerdasar.png" alt="Sertifikat 1">
+                         </div>
+                  <h5 class="title" >JARINGAN KOMPUTER</h5>
+                  </div>
+
+                  <div class="cisco">
+                    <div class="certificate" data-aos="zoom-in" onclick="openModal('Serti/serti1.jpg')">
+                      <img src="Serti/serti1.jpg" alt="Sertifikat 1">
+                  </div>
+                  <h5 class="title" >MOBILE DEVELOPER</h5>
+                  </div>
+
+                  <div class="cisco">
+                    <div class="certificate" data-aos="zoom-in" onclick="openModal('Serti/serti2.jpg')">
+                      <img src="Serti/serti2.jpg" alt="Sertifikat 2">
+                  </div>
+                  <h5 class="title" >SYBER SECURITY</h5>
+                  </div>
+
+                  <div class="cisco">
+                    <div class="certificate" data-aos="zoom-in" onclick="openModal('Serti/serti5.jpg')">
+                      <img src="Serti/serti5.jpg" alt="Sertifikat 3">
+                  </div>
+                  <h5 class="title" >WEB DEVELOPMENT</h5>
+                  </div>
+
+                  <div class="cisco">
+                    <div class="certificate" data-aos="zoom-in" onclick="openModal('Serti/serti6.jpg')">
+                      <img src="Serti/serti6.jpg" alt="Sertifikat 4">
+                  </div>
+                  <h5 class="title" >PEMROGRAMAN</h5>
+                  </div>
+                  
                 </div>
             </div>
             
@@ -446,7 +482,8 @@ https://templatemo.com/tm-531-reflux
       function openModal(imageName) {
     var overlay = document.querySelector('.overlay');
     var overlayImg = document.getElementById('overlay-img');
-    overlayImg.src = 'Serti/' + imageName;
+    overlayImg.src = imageName;
+    overlayImg.src = imageName;
     overlay.style.display = 'flex'; // Menampilkan overlay
 }
 
@@ -456,10 +493,10 @@ function closeModal() {
     overlay.style.display = 'none'; // Menyembunyikan overlay
 }
     </script>
+      
       <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
       <script>
         AOS.init();
-      </script>
+     </script>
   </body>
 </html>
->>>>>>> a4b338e0dd34909c8203a8131a3d91a180fbda2a
